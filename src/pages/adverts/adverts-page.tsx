@@ -96,7 +96,6 @@ export const AdvertsPage = () => {
         <form
           onSubmit={(event) => {
             event.preventDefault();
-
           }}
           className="animate-fadeIn mb-8 rounded-xl bg-gray-100 p-4 shadow-inner"
         >
@@ -104,7 +103,6 @@ export const AdvertsPage = () => {
             Filtros
           </h2>
           <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4">
-
             <div>
               <label
                 className="mb-1 block text-sm font-medium text-gray-700"
@@ -179,10 +177,10 @@ export const AdvertsPage = () => {
 
             {/* Filtro por tags múltiples */}
             <div className="sm:col-span-2 md:col-span-2 lg:col-span-4">
-              <label className="mb-1 block text-sm font-medium text-gray-700 text-center">
+              <label className="mb-1 block text-center text-sm font-medium text-gray-700">
                 Tags
               </label>
-              <div className="flex flex-wrap gap-3 justify-center">
+              <div className="flex flex-wrap justify-center gap-3">
                 {uniqueTags.map((tag) => (
                   <label
                     key={tag}
